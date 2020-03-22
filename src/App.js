@@ -6,16 +6,19 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 class App extends Component {
-
-  render(){
-
+  render() {
     return (
-    <div className="App">
+      <div className="App">
         <Header />
         <div className="wrapper">
-        <div className="introduction">
-              <p>Hi there, I see you want to make a <span>wish</span> well.. just type one in! If you're too shy to share, feel free to <span>like</span> other people's wishes!</p>
-        </div>
+          <div className="introduction">
+            <p>
+              Hi there! The world is going through a lot right now, so why not{' '}
+              <span>share a bubbly thought</span> and send that bubble of joy
+              anonymously. Just type one in! If you're too shy to share, feel
+              free to <span>like</span> other people's bubbly thoughts!
+            </p>
+          </div>
           <main>
             <CreateWish />
             <DisplayWishes />
@@ -24,9 +27,7 @@ class App extends Component {
         <Footer />
       </div>
     );
-
   }
-
 }
 
 export default App;

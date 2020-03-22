@@ -1,15 +1,21 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Footer extends Component {
   render() {
     return (
-      <footer className='footer'>
+      <footer className="footer">
         <p>
-          <span role='img' aria-label='fish emoji'>
+          <span role="img" aria-label="fish emoji">
             🐟
-          </span>{" "}
-          Made with big wishes by <span>Negin Sauermann</span> 2019{" "}
-          <span role='img' aria-label='fish emoji' className='ripple'>
+          </span>{' '}
+          Made with bubly thoughts by
+          <span>
+            <a href="https://www.negi.dev/" target="_blank">
+              Negin Sauermann
+            </a>
+          </span>{' '}
+          2020{' '}
+          <span role="img" aria-label="fish emoji" className="ripple">
             🐟
           </span>
         </p>
