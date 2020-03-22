@@ -62,10 +62,10 @@ class DisplayWishes extends Component {
       // 'x3',
       'x4',
       'x5',
-      // 'x6',
-      // 'x7',
+      'x6',
+      'x7',
       'x8',
-      // 'x9',
+      'x9',
       'x10'
     ];
     const wishes = this.state.wishes;
