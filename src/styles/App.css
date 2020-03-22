@@ -202,6 +202,15 @@ html {
   opacity: 0.8;
 }
 
+a {
+  color: #7dc3f9;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  font-size: 2.2rem;
+}
+
 span {
   color: #7dc3f9;
   font-size: 2.3rem;
@@ -364,7 +373,7 @@ textarea:focus {
   position: relative;
   /*for z-index*/
   text-align: center;
-  width: 50%;
+  width: 70%;
   border: 1px solid #7dc3f9;
   background-color: #191e47;
   -webkit-box-shadow: 10px 10px #191e47;

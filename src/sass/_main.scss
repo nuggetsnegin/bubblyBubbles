@@ -25,6 +25,15 @@ html {
   }
 }
 
+a {
+  color: $vibrant-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    font-size: 2.2rem;
+  }
+}
+
 span {
   color: $vibrant-color;
   font-size: 2.3rem;
@@ -154,7 +163,7 @@ textarea {
   z-index: 2;
   position: relative; /*for z-index*/
   text-align: center;
-  width: 50%;
+  width: 70%;
   border: 1px solid $vibrant-color;
   background-color: $accent-color;
   box-shadow: 10px 10px $accent-color;
