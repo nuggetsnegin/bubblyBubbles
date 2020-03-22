@@ -1053,6 +1053,9 @@ h1:after {
   footer {
     width: 80%;
   }
+  .note {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
