@@ -132,12 +132,6 @@
     transform: scale(0.9);
   }
 
-  .x5 {
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-
   .x6 {
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
@@ -150,22 +144,21 @@
     transform: scale(0.7);
   }
 
-  .x8 {
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-
   .x9 {
     -webkit-transform: scale(0.6);
     -moz-transform: scale(0.6);
     transform: scale(0.6);
   }
 
+  .x5,
+  .x8,
+  .x4,
   .x10 {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    transform: scale(0.8);
+    display: none;
+  }
+
+  .note {
+    display: none;
   }
 }
 
@@ -194,10 +187,6 @@
 
   footer {
     width: 80%;
-  }
-
-  .note {
-    display: none;
   }
 }
 
