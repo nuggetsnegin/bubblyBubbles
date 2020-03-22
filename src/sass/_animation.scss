@@ -4,9 +4,9 @@
   animation: wobble 5s infinite both;
 }
 
-.wobbleBottom{
-	-webkit-animation: wobbleBottom 0.99s both;
-	        animation: wobbleBottom 0.99s both;
+.wobbleBottom {
+  -webkit-animation: wobbleBottom 0.99s both;
+  animation: wobbleBottom 0.99s both;
 }
 
 /*BUBBLE ANIMATIONS*/
@@ -50,7 +50,7 @@
   animation: animateBubble 28s linear infinite,
     sideWays 2s ease-in-out infinite alternate;
 
-  left: 20%;
+  left: 25%;
   top: 40%;
 
   -webkit-transform: scale(0.9);
@@ -82,8 +82,8 @@
   animation: animateBubble 39s linear infinite,
     sideWays 4s ease-in-out infinite alternate;
 
-  left: 60%;
-  top: 50%;
+  left: 70%;
+  top: 20%;
 
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
@@ -354,61 +354,61 @@
  * animation wobble-hor-bottom
  * ----------------------------------------
  */
- @-webkit-keyframes wobbleBottom{
+@-webkit-keyframes wobbleBottom {
   0%,
   100% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
   15% {
     -webkit-transform: translateX(-30px) rotate(-6deg);
-            transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
   }
   30% {
     -webkit-transform: translateX(15px) rotate(6deg);
-            transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
   }
   45% {
     -webkit-transform: translateX(-15px) rotate(-3.6deg);
-            transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
   }
   60% {
     -webkit-transform: translateX(9px) rotate(2.4deg);
-            transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
   }
   75% {
     -webkit-transform: translateX(-6px) rotate(-1.2deg);
-            transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }
 @keyframes wobbleBottom {
   0%,
   100% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
   15% {
     -webkit-transform: translateX(-30px) rotate(-6deg);
-            transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
   }
   30% {
     -webkit-transform: translateX(15px) rotate(6deg);
-            transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
   }
   45% {
     -webkit-transform: translateX(-15px) rotate(-3.6deg);
-            transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
   }
   60% {
     -webkit-transform: translateX(9px) rotate(2.4deg);
-            transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
   }
   75% {
     -webkit-transform: translateX(-6px) rotate(-1.2deg);
-            transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }

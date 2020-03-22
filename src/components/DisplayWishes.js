@@ -1,13 +1,13 @@
 /* DISPLAYWISHES.JS */
-import React, { Component } from "react";
-import SubmittedWish from "./SubmittedWish";
-import firebase from "../firebase.js";
+import React, { Component } from 'react';
+import SubmittedWish from './SubmittedWish';
+import firebase from '../firebase.js';
 
 class DisplayWishes extends Component {
   constructor() {
     super();
     this.state = {
-      wishes: [] /* empty because we're loading from db */,
+      wishes: [] /* empty because we're loading from db */
     };
   }
 
@@ -15,7 +15,7 @@ class DisplayWishes extends Component {
   componentDidMount() {
     const dbRef = firebase.database().ref();
 
-    dbRef.on("value", snapshot => {
+    dbRef.on('value', snapshot => {
       const dbWishes = snapshot.val();
       const displayWishes = [];
 
@@ -24,7 +24,7 @@ class DisplayWishes extends Component {
         const wishObject = {
           wishId: key,
           wish: dbWishes[key].wish,
-          support: dbWishes[key].support,
+          support: dbWishes[key].support
         };
         displayWishes.push(wishObject);
       }
@@ -38,7 +38,7 @@ class DisplayWishes extends Component {
       const combinedWishes = [mostRecentWish, ...randomWishes.slice(0, 9)];
 
       this.setState({
-        wishes: combinedWishes /* recent users wish and 9 random */,
+        wishes: combinedWishes /* recent users wish and 9 random */
       });
     });
   }
@@ -48,7 +48,7 @@ class DisplayWishes extends Component {
       const randomized = Math.floor(Math.random() * i + 1);
       [wishesArray[i], wishesArray[randomized]] = [
         wishesArray[randomized],
-        wishesArray[i],
+        wishesArray[i]
       ];
     }
     return wishesArray;
@@ -57,21 +57,21 @@ class DisplayWishes extends Component {
   render() {
     /* for assigning random x1-x10 class for bubble animations on user wishes */
     const bubbleClasses = [
-      "x1",
-      "x2",
-      "x3",
-      "x4",
-      "x5",
-      "x6",
-      "x7",
-      "x8",
-      "x9",
-      "x10",
+      'x1',
+      'x2',
+      // 'x3',
+      'x4',
+      'x5',
+      // 'x6',
+      // 'x7',
+      'x8',
+      // 'x9',
+      'x10'
     ];
     const wishes = this.state.wishes;
 
     return (
-      <div className='wishDisplay'>
+      <div className="wishDisplay">
         <ul>
           {/* map through object so we can render it */}
           {wishes.map((wish, i) => {
