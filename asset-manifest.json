@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/bubblyBubbles/static/css/main.cac2068d.chunk.css",
+    "main.js": "/bubblyBubbles/static/js/main.c1159d81.chunk.js",
+    "main.js.map": "/bubblyBubbles/static/js/main.c1159d81.chunk.js.map",
+    "runtime-main.js": "/bubblyBubbles/static/js/runtime-main.dc3fa556.js",
+    "runtime-main.js.map": "/bubblyBubbles/static/js/runtime-main.dc3fa556.js.map",
+    "static/js/2.63777d2a.chunk.js": "/bubblyBubbles/static/js/2.63777d2a.chunk.js",
+    "static/js/2.63777d2a.chunk.js.map": "/bubblyBubbles/static/js/2.63777d2a.chunk.js.map",
+    "index.html": "/bubblyBubbles/index.html",
+    "precache-manifest.03225bd894b62feb07303e4801fd7ce3.js": "/bubblyBubbles/precache-manifest.03225bd894b62feb07303e4801fd7ce3.js",
+    "service-worker.js": "/bubblyBubbles/service-worker.js",
+    "static/css/main.cac2068d.chunk.css.map": "/bubblyBubbles/static/css/main.cac2068d.chunk.css.map",
+    "static/media/scubaCat.png": "/bubblyBubbles/static/media/scubaCat.81f37c87.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc3fa556.js",
+    "static/js/2.63777d2a.chunk.js",
+    "static/css/main.cac2068d.chunk.css",
+    "static/js/main.c1159d81.chunk.js"
+  ]
+}
