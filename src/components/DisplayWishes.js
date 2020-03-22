@@ -59,7 +59,7 @@ class DisplayWishes extends Component {
     const bubbleClasses = [
       'x1',
       'x2',
-      // 'x3',
+      'x3',
       'x4',
       'x5',
       'x6',

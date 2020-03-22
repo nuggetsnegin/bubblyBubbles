@@ -599,8 +599,8 @@ h1:after {
 }
 
 .x2 {
-  -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 30s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 30s linear infinite, sideWays 4s ease-in-out infinite alternate;
   left: 15%;
   top: 80%;
   -webkit-transform: scale(0.8);
@@ -656,16 +656,16 @@ h1:after {
   -webkit-animation: animateBubble 32s linear infinite, sideWays 3s ease-in-out infinite alternate;
   animation: animateBubble 32s linear infinite, sideWays 3s ease-in-out infinite alternate;
   left: 70%;
-  top: 40%;
+  top: 70%;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 .x9 {
-  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 49s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 49s linear infinite, sideWays 4s ease-in-out infinite alternate;
   left: 5%;
-  top: 50%;
+  top: 60%;
   -webkit-transform: scale(0.76);
   transform: scale(0.76);
 }
