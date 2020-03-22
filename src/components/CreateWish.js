@@ -1,37 +1,37 @@
 /* CREATEWISH.JS COMPONENT */
 /* Create a single 'wish' and loading it to the database. Rendering the text input field. */
-import React, { Component } from "react";
-import firebase from "../firebase.js";
-import Error from "./Error";
+import React, { Component } from 'react';
+import firebase from '../firebase.js';
+import Error from './Error';
 
-const filter = require("leo-profanity"); /* for filtering bad words */
+const filter = require('leo-profanity'); /* for filtering bad words */
 
 class CreateWish extends Component {
   constructor() {
     super();
     this.state = {
-      wishInput: "",
+      wishInput: '',
       support: 0,
       characterRemaining: 120,
-      showError: false /* for error pop up */,
+      showError: false /* for error pop up */
     };
   }
 
   handleInput = event => {
     this.setState({
-      wishInput: event.target.value,
+      wishInput: event.target.value
     });
   };
 
   toggleError = () => {
     this.setState({
-      showError: !this.state.showError /* toggling error */,
+      showError: !this.state.showError /* toggling error */
     });
   };
 
   checkBadWords = () => {
     const wishInput = this.state.wishInput;
-    let cleanedUp = filter.clean(wishInput, "💢");
+    let cleanedUp = filter.clean(wishInput, '💢');
 
     return cleanedUp;
   };
@@ -39,7 +39,7 @@ class CreateWish extends Component {
   validateInput = wishInput => {
     const trimmedWishInput = wishInput.trim(); /* avoid white space ~ user inputting empty wish */
     /* check if input not empty and *check if wish under char length */
-    if (trimmedWishInput !== "" && wishInput.length > 0) {
+    if (trimmedWishInput !== '' && wishInput.length > 0) {
       return trimmedWishInput;
     } else {
       /* disable button */
@@ -64,41 +64,43 @@ class CreateWish extends Component {
       const dbRef = firebase.database().ref(); /* db reference */
       dbRef.push({
         wish: cleanedText,
-        support: support,
+        support: support
       });
       this.setState({
-        wishInput: "" /* making input field empty on submit */,
+        wishInput: '' /* making input field empty on submit */
       });
     }
   };
 
   render() {
     return (
-      <div className='inputContainer'>
+      <div className="inputContainer">
         {this.state.showError ? <Error closeError={this.toggleError} /> : null}
-        <div className='input'>
+        <div className="input">
           <form onSubmit={this.handleSubmit}>
-            <label htmlFor='wishInput' className='visuallyHidden'>Wish Input</label>
-              <textarea
-                id='wishInput'
-                rows='4'
-                maxLength={120}
-                type='text'
-                value={this.state.wishInput}
-                onChange={this.handleInput}
-                placeholder='I wish I could own 3 cats someday!'
-              />
-              <div className='buttonWrapper'>
-                <p>Wish Words Remaining: {this.state.wishInput.length}/120</p>
+            <label htmlFor="wishInput" className="visuallyHidden">
+              Wish Input
+            </label>
+            <textarea
+              id="wishInput"
+              rows="4"
+              maxLength={120}
+              type="text"
+              value={this.state.wishInput}
+              onChange={this.handleInput}
+              placeholder="I'm happy I get to spend a lot time with my cats during the quarantine!"
+            />
+            <div className="buttonWrapper">
+              <p>Wish Words Remaining: {this.state.wishInput.length}/120</p>
 
-                <button
-                  className='wishButton ripple'
-                  type='submit'
-                  disabled={!this.state.wishInput || this.state.showError}
-                >
-                  Submit Wish
-                </button>
-              </div>
+              <button
+                className="wishButton ripple"
+                type="submit"
+                disabled={!this.state.wishInput || this.state.showError}
+              >
+                Submit Wish
+              </button>
+            </div>
           </form>
         </div>
       </div>

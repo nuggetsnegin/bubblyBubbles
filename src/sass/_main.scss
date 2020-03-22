@@ -108,6 +108,7 @@ form {
 }
 
 textarea {
+  text-align: center;
   background-color: $accent-color;
   border: 2px solid $base-color;
   border-radius: 25px;
@@ -119,10 +120,13 @@ textarea {
 
   &::placeholder {
     color: $base-color;
-    opacity: 0.6;
+    opacity: 0.8;
   }
   &:focus {
     border: 2px dashed $base-color;
+    &::placeholder {
+      opacity: 0.2;
+    }
   }
 }
 

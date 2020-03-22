@@ -14,9 +14,10 @@ class App extends Component {
           <div className="introduction">
             <p>
               Hi there! The world is going through a lot right now, so why not{' '}
-              <span>share a bubbly thought</span> and send that bubble of joy
-              anonymously. Just type one in! If you're too shy to share, feel
-              free to <span>like</span> other people's bubbly thoughts!
+              share a <span>bubbly thought</span> and send that{' '}
+              <span>bubble of joy</span> anonymously. Just type one in! If
+              you're too shy to share, feel free to <span>like</span> other's
+              bubbly thoughts!
             </p>
           </div>
           <main>

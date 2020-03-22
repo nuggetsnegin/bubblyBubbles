@@ -295,6 +295,7 @@ form {
 }
 
 textarea {
+  text-align: center;
   background-color: #191e47;
   border: 2px solid #f9f5ff;
   border-radius: 25px;
@@ -307,26 +308,42 @@ textarea {
 
 textarea::-webkit-input-placeholder {
   color: #f9f5ff;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 textarea:-ms-input-placeholder {
   color: #f9f5ff;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 textarea::-ms-input-placeholder {
   color: #f9f5ff;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 textarea::placeholder {
   color: #f9f5ff;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 textarea:focus {
   border: 2px dashed #f9f5ff;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0.2;
+}
+
+textarea:focus:-ms-input-placeholder {
+  opacity: 0.2;
+}
+
+textarea:focus::-ms-input-placeholder {
+  opacity: 0.2;
+}
+
+textarea:focus::placeholder {
+  opacity: 0.2;
 }
 
 .wishButton {
