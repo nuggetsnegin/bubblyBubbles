@@ -1,0 +1,281 @@
+/*VARIABLES SETUP*/
+$base-color: #f9f5ff;
+$dark-color: #1c2e68;
+$accent-color: rgb(25, 30, 71);
+$vibrant-color: #7dc3f9;
+
+/*MAIN*/
+@import url("https://fonts.googleapis.com/css?family=Gaegu&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+.heartWrapper {
+  display: flex;
+
+  p {
+    margin-top: 6px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+  }
+}
+
+span {
+  color: $vibrant-color;
+  font-size: 2.3rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  grid-area: Main;
+}
+
+body {
+  font-family: "Gaegu", cursive;
+  font-size: 2rem;
+  overflow-x: hidden;
+  color: $base-color;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(0deg, #1a4d7c, #1c1632);
+  background-size: 400% 400%;
+  -webkit-animation: background 30s ease infinite;
+  -moz-animation: background 30s ease infinite;
+  animation: background 30s ease infinite;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Header"
+    "Main"
+    "Footer";
+}
+
+header {
+  text-align: center;
+  z-index: 3;
+  grid-area: Header;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+button {
+  border: none;
+  background-color: $accent-color;
+  color: $base-color;
+}
+
+/*INPUT BOX - WISH INPUT*/
+.buttonWrapper {
+  text-align: center;
+}
+
+.inputContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  overflow: hidden;
+}
+
+form {
+  z-index: 3;
+  position: relative; /*for z-index to work*/
+  margin-top: 30px;
+}
+
+textarea {
+  background-color: $accent-color;
+  border: 2px solid $base-color;
+  border-radius: 25px;
+  padding: 10px 80px;
+  width: 100%;
+  margin: 0 auto;
+  resize: none;
+  color: $base-color;
+
+  &::placeholder {
+    color: $base-color;
+    opacity: 0.6;
+  }
+  &:focus {
+    border: 2px dashed $base-color;
+  }
+}
+
+.wishButton {
+  font-size: 2.5rem;
+  text-align: center;
+  color: $base-color;
+  background-color: $accent-color;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid $vibrant-color;
+  border-radius: 25px;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background: $vibrant-color
+      radial-gradient(circle, transparent 1%, $accent-color 1%) center/15000%;
+  }
+  &:focus {
+    transform: scale(1.2);
+    border: 2px dashed $base-color;
+  }
+  &:active {
+    background-color: $accent-color;
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+/*INTRODUCTION*/
+.introduction {
+  margin: 0 auto;
+  z-index: 2;
+  position: relative; /*for z-index*/
+  text-align: center;
+  width: 50%;
+  border: 1px solid $vibrant-color;
+  background-color: $accent-color;
+  box-shadow: 10px 10px $accent-color;
+  padding: 5px 10px;
+  opacity: 0.95;
+  border-radius: 25px;
+  font-size: 1.85rem;
+  color: $base-color;
+
+  span {
+    color: $vibrant-color;
+  }
+}
+
+/*WISH DISPLAY*/
+ul {
+  list-style: none;
+}
+
+.bubblePosition {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  max-height: 200px;
+  max-width: 250px;
+}
+
+li {
+  background-color: rgba(133, 196, 255, 0.5);
+  -webkit-box-shadow: -2px -1px 123px -33px rgba(225, 225, 247, 0.3);
+  -moz-box-shadow: -2px -1px 123px -33px rgba(225, 225, 247, 0.3);
+  box-shadow: -2px -1px 123px -33px rgba(225, 225, 247, 0.3);
+  font-size: 2rem;
+  text-align: center;
+  padding: 50px 40px;
+  color: $base-color;
+  min-height: 200px;
+  min-width: 250px;
+  overflow: hidden; /*for if user puts really long word it won't break out of the bubble!*/
+}
+
+/*SUPPORT HEARTS*/
+.supportButton {
+  background: transparent;
+  color: $base-color;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:focus {
+    transform: scale(1.2);
+    border: 2px dashed $accent-color;
+  }
+}
+
+footer {
+  min-height: 5vh;
+  opacity: 0.8;
+  color: $base-color;
+  text-align: center;
+  grid-area: Footer;
+  p {
+    padding: 10px 0px;
+  }
+}
+
+/*ERROR*/
+.errorMessage {
+  background-color: $dark-color;
+  border-radius: 25px;
+  position: absolute;
+  box-shadow: 10px 10px $accent-color;
+  font-size: 2rem;
+  color: $base-color;
+  z-index: 4;
+  padding: 20px 100px;
+  padding-bottom: 0;
+  text-align: center;
+
+  img {
+    padding-top: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  h2 {
+    font-size: 5rem;
+    text-shadow: 2px 2px $accent-color;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  button {
+    background-color: $base-color;
+    color: $dark-color;
+    padding: 10px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    border: 2px solid $accent-color;
+    &:hover {
+      transform: scale(1.2);
+      color: $base-color;
+      cursor: pointer;
+      background: $accent-color
+        radial-gradient(circle, transparent 1%, $accent-color 1%) center/15000%;
+    }
+    &:focus {
+      transform: scale(1.2);
+      border: 2px dashed $accent-color;
+    }
+    &:active {
+      background-color: $accent-color;
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+}
