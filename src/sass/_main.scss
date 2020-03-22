@@ -5,7 +5,7 @@ $accent-color: rgb(25, 30, 71);
 $vibrant-color: #7dc3f9;
 
 /*MAIN*/
-@import url("https://fonts.googleapis.com/css?family=Gaegu&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Gaegu&display=swap');
 
 html {
   font-size: 62.5%;
@@ -38,7 +38,7 @@ span {
 }
 
 body {
-  font-family: "Gaegu", cursive;
+  font-family: 'Gaegu', cursive;
   font-size: 2rem;
   overflow-x: hidden;
   color: $base-color;
@@ -53,12 +53,12 @@ body {
   animation: background 30s ease infinite;
   display: grid;
   grid-gap: 20px;
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: repeat(3, auto);
   grid-template-columns: 1fr;
   grid-template-areas:
-    "Header"
-    "Main"
-    "Footer";
+    'Header'
+    'Main'
+    'Footer';
 }
 
 header {

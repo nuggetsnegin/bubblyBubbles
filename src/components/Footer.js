@@ -8,12 +8,10 @@ class Footer extends Component {
           <span role="img" aria-label="fish emoji">
             🐟
           </span>{' '}
-          Made with bubly thoughts by
-          <span>
-            <a href="https://www.negi.dev/" target="_blank">
-              Negin Sauermann
-            </a>
-          </span>{' '}
+          Made with bubbly thoughts by{' '}
+          <a href="https://www.negi.dev/" target="_blank">
+            Negin Sauermann
+          </a>{' '}
           2020{' '}
           <span role="img" aria-label="fish emoji" className="ripple">
             🐟

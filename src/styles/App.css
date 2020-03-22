@@ -217,7 +217,7 @@ span {
 }
 
 body {
-  font-family: "Gaegu", cursive;
+  font-family: 'Gaegu', cursive;
   font-size: 2rem;
   overflow-x: hidden;
   color: #f9f5ff;
@@ -233,12 +233,11 @@ body {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-rows: (min-content)[3];
-      grid-template-rows: repeat(3, -webkit-min-content);
-      grid-template-rows: repeat(3, min-content);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: "Header" "Main" "Footer";
+      grid-template-areas: 'Header' 'Main' 'Footer';
 }
 
 header {
