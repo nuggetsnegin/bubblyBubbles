@@ -452,6 +452,33 @@ li {
   border: 2px dashed #191e47;
 }
 
+/*FOOTER*/
+.note {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  width: 30%;
+  background: #1c2e68;
+  border-radius: 25px;
+  padding: 5px 20px;
+}
+
+.note p {
+  margin: 0;
+  padding: 0;
+}
+
+.note span {
+  font-size: 1.7rem;
+}
+
+.note a {
+  font-size: 1.4rem;
+}
+
+.note a:hover, .note a:focus {
+  font-size: 1.5rem;
+}
+
 footer {
   min-height: 5vh;
   opacity: 0.8;

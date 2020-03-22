@@ -6,9 +6,6 @@ class Footer extends Component {
       <footer className="footer">
         <div className="note">
           <p>
-            Little Message from <span>Negin</span>:
-          </p>
-          <p>
             {' '}
             I made{' '}
             <a href="https://nuggetsnegin.github.io/wishyWashy/">
@@ -17,7 +14,8 @@ class Footer extends Component {
             in 2019 - the first version of this project! The original intent was
             to send an anonymous wish into the wishy washy ocean. Surfing the
             'net' has been a bit hard lately, so I figured why not repurpose
-            this project into some goodness.
+            this project into some goodness. Stay safe everyone, I miss your
+            lovely faces. - <span>Negin</span>
           </p>
         </div>
         <div>

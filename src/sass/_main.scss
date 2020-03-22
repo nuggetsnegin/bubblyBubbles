@@ -224,6 +224,30 @@ li {
   }
 }
 
+/*FOOTER*/
+.note {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  width: 30%;
+  background: $dark-color;
+  border-radius: 25px;
+  padding: 5px 20px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  span {
+    font-size: 1.7rem;
+  }
+  a {
+    font-size: 1.4rem;
+    &:hover,
+    &:focus {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 footer {
   min-height: 5vh;
   opacity: 0.8;
