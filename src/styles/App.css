@@ -383,6 +383,23 @@ textarea:focus::placeholder {
   transition: background 0.8s;
 }
 
+.bgmButton {
+  margin-left: 10px;
+  border: 1px solid #7dc3f9;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.bgmButton.bgmOn {
+  color: black;
+  background-color: #7dc3f9;
+  border: 1px solid white;
+}
+
+.bgmButton:hover {
+  background: #7dc3f9 radial-gradient(circle, transparent 1%, #191e47 1%) center/15000%;
+}
+
 /*INTRODUCTION*/
 .introduction {
   margin: 0 auto;
