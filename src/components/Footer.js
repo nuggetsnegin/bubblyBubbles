@@ -27,7 +27,7 @@ class Footer extends Component {
               resources
             </a>{' '}
             that I think are wonderful. Stay safe everyone, I miss your lovely
-            faces. - <span>Negin</span>
+            faces. - <span>Negi</span>
           </p>
         </div>
         <div>
@@ -37,7 +37,7 @@ class Footer extends Component {
             </span>{' '}
             Made with bubbly thoughts by{' '}
             <a href="https://www.negi.dev/" target="_blank">
-              Negin Sauermann
+              Negi
             </a>{' '}
             2020{' '}
             <span role="img" aria-label="fish emoji" className="ripple">

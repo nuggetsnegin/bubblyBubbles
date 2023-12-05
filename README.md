@@ -18,4 +18,4 @@ A remake of [WishyWashy](https://github.com/nuggetsnegin/wishyWashy)! Instead of
 
 ## Authors
 
-* **Negin Melina Sauermann** - [nuggetsnegin](https://github.com/nuggetsnegin)
+* **Negi** - [nuggetsnegin](https://github.com/nuggetsnegin)
